@@ -26,14 +26,17 @@ cones = {
 sales_tax_rate = 0.07 # 7% sales tax
 
 def show_items(item_dict):
+    """return a formated string of items and their prices from a dictionary"""
     return "\n".join([f"{name}: ${price:.2f}" for name, price in item_dict.items()])
 
 def calculate_total(order_items):
+    """calculate the total price and sales tax for a list of ordered items"""
     total = sum(price * quantity for price, quantity in order_items)
     sales_tax = total * sales_tax_rate
     return total, sales_tax
 
 def order_summary():
+    """generate an order summary and display it ina message box"""
     order_items = []
     for entry in entries:
         if entry[1].get().isdigit() and entry[0].get() in item_price_dict:
@@ -76,6 +79,7 @@ btn_cones.pack(pady=5)
 # input fields for ordering
 tk.Label(root, text="Enter your order (item: quantity)").pack(pady=10)
 
+# create input fields for each item
 for item in item_price_dict.keys():
     frame = tk.Frame(root)
     frame.pack(pady=2)
