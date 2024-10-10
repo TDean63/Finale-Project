@@ -1,29 +1,26 @@
-# Finale-Project
-Cone Control GUI
-
 import tkinter as tk
 from tkinter import messagebox
 
 # prices and items
 ice_creams = {
-    "Vanilla": 79.99,
-    "Chocolate": 79.99,
-    "Strawberry": 81.99,
-    "Mint Chocolate Chip": 81.99,
-    "Cookies and Cream": 79.99
+    "Vanilla(3 gallons)": 79.99,
+    "Chocolate(3 gallons)": 79.99,
+    "Strawberry(3 gallons)": 81.99,
+    "Mint Chocolate Chip(3 gallons)": 81.99,
+    "Cookies and Cream(3 gallons)": 79.99
 }
 
 toppings = {
-    "Hot Fudge": 30.99,
-    "Sprinkles": 46.49,
-    "Crushed Nuts": 63.49,
-    "Whipped Cream": 78.49,
-    "Caramel Sauce": 148.99
+    "Hot Fudge(48 fl. oz. 4 case)": 42.49,
+    "Sprinkles(25 lb.)": 46.49,
+    "Crushed Nuts(5 lb.)": 63.49,
+    "Whipped Cream(16 oz. case)": 78.49,
+    "Caramel Sauce(50 lb.)": 148.99
 }
 
 cones = {
-    "Waffle Cones": 41.99,
-    "Wafer Cones": 58.49
+    "Waffle Cones(400 case)": 41.99,
+    "Wafer Cones(720 case)": 58.49
 }
 
 sales_tax_rate = 0.07 # 7% sales tax
